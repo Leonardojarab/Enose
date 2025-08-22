@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="953af2aa-594b-4d2a-bbb0-8c25f0be8181" name="Changes" comment="second commit">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/format.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/format.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/metrics_func.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/metrics_func.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pca.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pca.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/signal.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/signal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/split.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/split.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/xgboost_func.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/xgboost_func.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +84,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1755857453233</updated>
-      <workItem from="1755857454273" duration="11068000" />
+      <workItem from="1755857454273" duration="11673000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -110,7 +102,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755864330325</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="second commit">
+      <option name="closed" value="true" />
+      <created>1755869395331</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1755869395331</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
