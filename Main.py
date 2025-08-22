@@ -2,7 +2,7 @@
 """
 Main script for COPD/Smokers/Control classification using
 Electronic Nose signals, PCA and XGBoost.
-Author: leoja
+Author: Leonardo Jara
 Created on Sat Aug 16 08:55:42 2025
 """
 
