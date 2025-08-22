@@ -1,7 +1,11 @@
-# E-Nose COPD Detection Project
+# 🧪 Enose Classification Project  
 
-This repository contains a project focused on the analysis of data collected from an electronic nose (E-nose) to classify patients into three categories: **COPD**, **Smokers**, and **Controls**.  
-The project leverages **machine learning** techniques, **dimensionality reduction (PCA)**, and **XGBoost** for multiclass classification.
+This repository contains a pipeline for processing, visualizing, and classifying **electronic nose (eNose) signal data** for three groups of patients.  
+
+The dataset used in this project comes from a **publicly available study**:  
+👉 [Mendeley Data – eNose signals dataset](https://data.mendeley.com/datasets/h5pcn99zw4/5)  
+
+This repository is designed to **emulate a real-world research workflow** using eNose data. In practice, our main experiments are performed on a much larger dataset that cannot be shared due to **privacy restrictions**, but this public dataset provides a reproducible reference for testing and demonstrating the pipeline.  
 
 ---
 
