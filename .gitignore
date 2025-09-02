@@ -1,0 +1,38 @@
+# === MLflow (tracking y registry) ===
+mlruns/
+mlruns_local/
+mlartifacts/
+mlflow.db
+
+# === Artefactos y salidas ===
+artifacts/
+models/
+outputs/
+reports/
+logs/
+*.log
+
+# === Datos (deja solo muestras pequeñas) ===
+data/
+!data/README.md
+!data/*.sample.*
+!data/*sample*.csv
+
+# === Python / cache ===
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# === Entornos ===
+.venv/
+venv/
+env/
+.conda/
+*.egg-info/
+
+# === IDE / SO ===
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
