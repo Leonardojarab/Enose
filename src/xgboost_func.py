@@ -6,10 +6,10 @@ Returns the best fitted model plus test predictions and probabilities.
 
 from sklearn.model_selection import  GridSearchCV, StratifiedKFold
 from xgboost import XGBClassifier
+import mlflow.sklearn
 
 
-
-def xgb_grid_mc(X_train, X_test, y_train, y_test, score='recall_macro', n_classes=3, kn=3):
+def xgb_grid_mc(X_train, X_test, y_train, y_test, score='recall_macro', n_classes=3, kn=3,class_names=None):
     """
         Run a grid search over XGBoost hyperparameters for a multiclass problem.
 
@@ -40,10 +40,14 @@ def xgb_grid_mc(X_train, X_test, y_train, y_test, score='recall_macro', n_classe
         y_proba : ndarray of shape (m_samples, n_classes)
             Class probabilities on X_test produced by the best model.
         """
+
+
+
+
+
     # Base estimator configured for multiclass probability outputs.
     xgb = XGBClassifier(
         objective='multi:softprob', # multiclass: returns class probabilities
-        num_class=n_classes,        # number of classes
         random_state=42,
         eval_metric='mlogloss',     # evaluation metric during training
         tree_method='hist'          # fast histogram algorithm
@@ -74,15 +78,29 @@ def xgb_grid_mc(X_train, X_test, y_train, y_test, score='recall_macro', n_classe
         error_score='raise'
     )
 
+
     # Fit grid search on the training data.
     grid.fit(X_train, y_train)
+
+    mlflow.sklearn.log_model(
+        sk_model=grid.best_estimator_,
+        artifact_path="best_model"
+
+    )
+
+
     print("Best parameters:", grid.best_params_)
     print(f"Best  {score}: {grid.best_score_:.4f}")
+
+
 
     # Retrieve the best trained model and evaluate on the test split.
     best = grid.best_estimator_
     y_pred = best.predict(X_test)
     y_proba = best.predict_proba(X_test)
+
+
+
     return y_pred, best, y_proba
 
 

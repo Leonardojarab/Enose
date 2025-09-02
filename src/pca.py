@@ -11,6 +11,8 @@ import matplotlib.colors
 import mplcursors
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
+import mlflow
+
 
 
 
@@ -47,6 +49,8 @@ def pca_elbow(df: pd.DataFrame, th: float = 0.95, estandarizar: bool = True) -> 
     plt.ylabel('Cumulative Explained Variance')
     plt.grid(True)
     plt.tight_layout()
+    plt.savefig("artifacts/pca_Elbow.png", bbox_inches="tight")
+    mlflow.log_artifact("artifacts/pca_Elbow.png")
     plt.show()
     print(f"PCA Elbow: {k} componentes para ≥{int(th * 100)}% variance")
     return k
@@ -141,6 +145,8 @@ def plot_pca_scatter(pca_df: pd.DataFrame, y: pd.Series, comp1: int = 0, comp2: 
         sel.annotation.set_text(f"patient_code: {pid}\nClass: {cl}\n{xcol}: {xv:.2f}\n{ycol}: {yv:.2f}")
 
     plt.tight_layout()
+    plt.savefig("artifacts/pca_Scatter.png", bbox_inches="tight")
+    mlflow.log_artifact("artifacts/pca_Scatter.png")
     plt.show()
 
 
