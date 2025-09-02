@@ -4,7 +4,7 @@ mlruns_local/
 mlartifacts/
 mlflow.db
 
-# === Artefactos y salidas ===
+# ===  Fixtures and outlets ===
 artifacts/
 models/
 outputs/
@@ -12,11 +12,7 @@ reports/
 logs/
 *.log
 
-# === Datos (deja solo muestras pequeñas) ===
-data/
-!data/README.md
-!data/*.sample.*
-!data/*sample*.csv
+
 
 # === Python / cache ===
 __pycache__/
@@ -24,7 +20,7 @@ __pycache__/
 *$py.class
 .ipynb_checkpoints/
 
-# === Entornos ===
+# === Environments ===
 .venv/
 venv/
 env/
