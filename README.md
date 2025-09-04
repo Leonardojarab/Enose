@@ -1,3 +1,29 @@
+
+<p align="left">
+  <a href="https://github.com/Leonardojarab?tab=repositories">
+    <img alt="My Portfolio" src="https://img.shields.io/badge/My%20Portfolio-000?style=for-the-badge">
+  </a>
+  <a href="https://www.linkedin.com/in/leonardo-jara-454449a4/">
+    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge">
+  </a>
+</p>
+<p align="center">
+  <a href="https://github.com/Leonardojarab?tab=repositories">
+    <img src="assets/enose.jpg" alt="Enose Project" width="100%" />
+  </a>
+</p>
+
+
+
+<p>
+  <img alt="Python" src="https://img.shields.io/badge/Python-3.9%2B-informational?style=flat-square">
+  <img alt="TensorFlow" src="https://img.shields.io/badge/TensorFlow-2.12.0%20(Conda--Forge)-orange?style=flat-square">
+  <img alt="pandas" src="https://img.shields.io/badge/pandas-library-informational?style=flat-square">
+  <img alt="numpy" src="https://img.shields.io/badge/numpy-library-informational?style=flat-square">
+  <img alt="scikit-learn" src="https://img.shields.io/badge/scikit--learn-ML-blue?style=flat-square">
+  <img alt="xgboost" src="https://img.shields.io/badge/XGBoost-ML-green?style=flat-square">
+</p>
+
 # 🧪 Enose Classification Project  
 
 This repository contains a pipeline for processing, visualizing, and classifying **electronic nose (eNose) signal data** for three groups of patients.  

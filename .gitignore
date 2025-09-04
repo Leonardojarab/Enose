@@ -12,7 +12,7 @@ reports/
 logs/
 *.log
 
-
+assets/
 
 # === Python / cache ===
 __pycache__/
